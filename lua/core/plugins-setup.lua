@@ -38,7 +38,16 @@ return require('packer').startup(function(use)
   -- pane movement plugin
   use "christoomey/vim-tmux-navigator"
 
-  
+    -- lsp -> language server protocols
+  use {
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig",
+    "glepnir/lspsaga.nvim", branch = "main", -- for window like vscode
+    "jose-elias-alvarez/typescript.nvim",
+    "onsails/lspkind.nvim"
+  }
+
   -- telescope setup, fuzzy finder
   use {
       "nvim-telescope/telescope.nvim", tag = "0.1.3",
