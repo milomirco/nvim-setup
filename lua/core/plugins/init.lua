@@ -5,3 +5,8 @@ require("core.plugins.lualine")
 require("core.plugins.autopairs")
 -- lsp imports
 require("core.plugins.lsp.mason")
+require("core.plugins.lsp.nvim-cmp")
+require("core.plugins.lsp.completion")
+require("core.plugins.lsp.lspconfig")
+require("core.plugins.lsp.lspsaga")
+require("core.plugins.lsp.lspsaga")
