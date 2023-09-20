@@ -22,15 +22,19 @@ return require('packer').startup(function(use)
 
   -- themes
   use "folke/tokyonight.nvim"
-  
-  vim.cmd[[ set background=dark ]]
-  vim.cmd[[colorscheme tokyonight]]
-  
+
+    -- lua-line theme
+  use "nvim-lualine/lualine.nvim"
+      
   -- nvim tree for sidebar & telescope
   use "nvim-tree/nvim-tree.lua"
   use "nvim-tree/nvim-web-devicons"
   use "nvim-treesitter/nvim-treesitter"
-  
+ 
+    -- autopairs
+  use "windwp/nvim-autopairs"
+  use "windwp/nvim-ts-autotag"
+
   -- pane movement plugin
   use "christoomey/vim-tmux-navigator"
 
