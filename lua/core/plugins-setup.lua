@@ -22,6 +22,7 @@ return require('packer').startup(function(use)
 
   -- themes
   use "folke/tokyonight.nvim"
+  use "catppuccin/nvim"
 
     -- lua-line theme
   use "nvim-lualine/lualine.nvim"
@@ -63,7 +64,8 @@ return require('packer').startup(function(use)
 
   -- telescope setup, fuzzy finder
   use {
-      "nvim-telescope/telescope.nvim", tag = "0.1.3",
+      "nvim-telescope/telescope.nvim",
+      tag = "0.1.0",
       requires = { {"nvim-lua/plenary.nvim"} }
   }
 
